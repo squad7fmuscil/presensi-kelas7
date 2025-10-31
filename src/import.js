@@ -1,0 +1,6 @@
+import Dashboard from './pages/Dashboard'
+import DataGuru from './pages/DataGuru'
+import DataSiswa from './pages/DataSiswa'
+import Presensi from './pages/Presensi'
+import Nilai from './pages/Nilai'
+import Laporan from './pages/Laporan'

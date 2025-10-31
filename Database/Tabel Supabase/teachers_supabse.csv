@@ -1,0 +1,18 @@
+﻿username;password;name;subject;role;homeroom_class;active;teacher_code
+yayatsubaryat;guru123;Yayat Subaryat;Bahasa Sunda;teacher;;TRUE;G-02
+admin;admin123;Administrator;;admin;;TRUE;ADMIN
+endahmirawanti;guru123;Endah Mirawanti;Seni Tari;homeroom_teacher;7C;TRUE;G-22
+elanjaelani;guru123;Elan Jaelani;Bahasa Inggris;homeroom_teacher;7F;TRUE;G-12
+sandiindrawan;guru123;Sandi Indrawan;Informatika dan Koding & AI;teacher;;TRUE;G-29
+eulissumartini;guru123;Eulis Sumartini;Pendidikan Pancasila;homeroom_teacher;7D;TRUE;G-06
+iismasruroh;guru123;Iis Masruroh;Pendidikan Agama Islam;teacher;;TRUE;G-07
+agussopandi;guru123;Agus Sopandi;PJOK;homeroom_teacher;7A;TRUE;G-19
+dewipuspitasari;guru123;Dewi Puspitasari;Matematika;homeroom_teacher;7B;TRUE;G-14
+syalfahauratunisa;guru123;Syalfa Hauratunisa;IPA;homeroom_teacher;7E;TRUE;G-27
+didirachmandani;guru123;Didi Rachmandani;Bahasa Indonesia;teacher;;TRUE;G-26
+elisitirohimah;guru123;Eli Siti Rohimah;IPS;teacher;;TRUE;G-04
+jajanghilman;guru123;Jajang Hilman;PJOK;teacher;;TRUE;G-03
+usin;guru123;Usin;Seni Tari;teacher;;TRUE;G-20
+sitimaryam;guru123;Siti Maryam Lomrah;Bahasa Indonesia;teacher;;TRUE;G-15
+yetikaryati;guru123;Yeti Karyati;Pendidikan Agama Islam;teacher;;TRUE;G-11
+wiwindamayanti;guru123;Wiwin Damayanti;Informatika;teacher;;TRUE;G-13

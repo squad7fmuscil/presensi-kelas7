@@ -1,0 +1,140 @@
+PRESENSI KELAS 7
+
+Akun Supabase : smpmuslimin2025
+codingbikinstress2@gmail.com
+
+Nama Proyek : Aplikasi Administrasi Sekolah
+Password Poyek Superbase : $presensi2025
+
+URL : https://onekgoiqgdnwjjvchqgv.supabase.co
+    
+API Keys : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9uZWtnb2lxZ2Rud2pqdmNocWd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU0OTg0NzYsImV4cCI6MjA3MTA3NDQ3Nn0.u69DGjg5G6V1jr-NGo_ErvKW9ab2srzr0QD59K7FkLE
+
+==============================================================================
+
+Database Structure ✅
+teachers : id,username, password, name, subject, role, homeroom_class, active, created_at, updated_at, 
+students : student_id, name, jenis_kelamin, class, active, created_at, updated_at
+attendance : id, student_id, date, class, name, status, session, notes, recorded_by, created_at, updated_at
+announcement : id,title,content,created_at,updated_at
+teacher_assignments :id,teacher_id,class_id,subject,academic_year,semester,created_at,updated_at
+
+
+attendances : id,student_id,teacher_id,date,subject,status,created_at,notes,class_id,type
+grades :id, student_id, teacher_id, subject, assignment_type, score, semester, academic_year, created_at, class_id
+
+
+================================================================================
+src/
+├── pages/
+│   ├── Login.js ✅
+│   └── Sidebar.js ✅
+│   ├── Dashboard.js ✅  
+│   ├── DataGuru.js ✅
+│   ├── DataKelas.js ✅
+│   ├── DataSiswa.js ✅
+│   ├── Presensi.js ✅
+│   ├── Nilai.js ✅
+│   ├── Laporan.js ✅
+│   └── EasyModul.js ✅
+├── services/
+│   └── supabaseClient.js ✅
+└── App.js ✅
+
+
+🏠 Dashboard
+📖 Data
+      ├─ 👨‍🏫 Data Guru
+      ├─ 📚 Data Kelas
+      └─ 🎓 Data Siswa
+📝 Presensi Siswa
+📊 Nilai Siswa
+📄 Laporan
+📘 EasyModul
+
+
+
+🔹 ADMIN Dashboard:
+Cards: |Total Guru | Total Kelas | Total Siswa |  Siswa per Jenjang  |
+Quick Actions: [Kelola Data Guru] [Kelola Kelas] [Kelola Siswa ] [Laporan Lengkap] 
++ Section tambahan: Pengumuman Terkini
+
+**🔹 HOMEROOM TEACHER Dashboard (contoh: Agus Sopandi - Kelas 7A):**
+Cards: Siswa Kelas 7A | Siswa Laki-Laki / Perempuan | Hadir Hari Ini (7A) | Tidak Hadir (7A) | 
+Quick Actions: [Presensi Kelas 7A] [Input Nilai PJOK] [Data Siswa 7A] [Laporan Kelas 7A]
++ Section tambahan: Pengumuman Terkini
+
+**🔹 TEACHER Dashboard (contoh: Yayat - Bahasa Sunda):**
+Cards: Total Siswa Diajar | Total Kelas Diajar | Hadir Mapel Hari Ini | 
+Quick Actions: [Presensi Bahasa Sunda] [Input Nilai Bahasa Sunda] [EasyModul]
++ Section tambahan: Pengumuman Terkini
+
+
+
+🎯 Target Prioritas (Urutan Pengerjaan yang Disarankan):
+1.	supabaseClient.js - Fondasinya. Pastikan koneksi ke Supabase sudah benar.
+2.	Login.js - Gerbang utama. Tanpa login, nggak ada yang bisa diakses.
+3.	App.js & Sidebar.js - Router dan navigasi. Setelah login, mau dibawa ke mana?
+4.	Dashboard.js - Halaman "home" setelah login. Beri summary yang useful.
+5.	DataGuru.js & DataSiswa.js - CRUD untuk master data. Fondasi untuk fitur lain (presensi, nilai).
+6.	Presensi.js - Fitur inti pertama. Butuh data siswa yang sudah jadi.
+7.	Nilai.js & Laporan.js - Fitur lanjutan.
+
+
+
+
+
+
+
+
+
+
+username		name			role 
+iismasruroh		Iis Masruroh		
+eulissumartini		Eulis Sumartini		walikelas 7D
+didirachmandani		Didi Rachmandani	
+dewipuspitasari		Dewi Puspitasari	walikelas 7B
+elanjaelani		Elan Jaelani		walikelas 7F
+syalfahauratunisa	Syalfa Hauratunisa	walikelas 7E
+elisitirohimah		Eli Siti Rohimah	
+agussopandi		Agus Sopandi		walikelas 7A
+sandiindrawan		Sandi Indrawan		
+sandiindrawan		Sandi Indrawan		
+endahmirawanti		Endah Mirawanti		walikelas 7C
+yayatsubaryat		Yayat Subaryat		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

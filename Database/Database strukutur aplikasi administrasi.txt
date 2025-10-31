@@ -1,0 +1,147 @@
+
+Nama Project : Presensi-Kelas7
+Password Project : presensi-kelas7
+
+Akun Project : smpmuslimincililin2026@gmail.com 
+
+URL : https://dgrncsnsgtrsotnynsrl.supabase.co
+API Key : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRncm5jc25zZ3Ryc290bnluc3JsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE2Mzg0ODEsImV4cCI6MjA3NzIxNDQ4MX0.H0viNk48Ia2q_GIy94706wM2OUyj6KBdxU_DcLEQE4I
+
+
+
+Tabel Pada Supabase :
+attendance : id,student_id,date,status,notes,created_at,class,type,mapel,teacher,semester,academic_year
+kelas : id,grade,academic_year
+nilai :id, student_id, teacher_id, subject, assignment_type, score, semester, academic_year, created_at
+students : student_id,name,jenis_kelamin,class,active,created_at,updated_at
+tugas_guru : id uuid, teacher_id, class_id, subject, academic_year, semester
+
+
+
+Presensi Kelas 7/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── page/                          # Folder untuk semua halaman
+│   │   ├── Dashboard.js
+│   │   ├── Students.js
+│   │   ├── Attendance.js
+│   │   ├── Grades.js
+│   │   ├── StudentNotes.js
+│   │   ├── Schedule.js
+│   │   ├── Report.js
+│   │   ├── Setting.js
+│   │   └── Sistem.js
+│   ├── supabaseClient.js              # Konfigurasi Supabase
+│   ├── App.js                         # Main App Component
+│   ├── index.js                       # Entry point
+│   └── index.css                      # Global Styles
+├── package.json
+├── package-lock.json
+└── .env                               # Environment Variables (buat manual)
+
+
+├── src/
+│   ├── components/           # Folder baru untuk components
+│   │   └── Layout.js        # Layout component
+
+
+
+
+
+
+
+
+
+
+date
+nis
+student_name
+status
+notes
+subject
+teacher_name
+created_at
+
+
+
+
+
+
+
+
+
+src/
+├── App.css
+├── App.js
+├── index.js
+├── pages/
+│   ├── Attendance.js
+│   ├── Dashboard.js
+│   ├── Grades.js
+│   ├── Students.js
+└── supabase/
+    └── supabaseClient.js
+
+
+
+================================================================================
+
+
+src/
+├── App.js
+├── App.css                    # Global styles & variables
+├── index.js
+├── pages/
+│   ├── Login.js
+│   ├── Sidebar.js
+│   ├── Dashboard.js
+│   ├── Classes.js
+│   ├── Attendance.js
+│   ├── Grades.js
+│   ├── Students.js
+│   └── Teachers.js
+├── styles/
+│   ├── Login.css              # Untuk Login.js
+│   ├── Sidebar.css            # Untuk Sidebar.js  
+│   ├── Dashboard.css          # Untuk Dashboard.js
+└── supabase/
+    └── supabaseClient.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+src/
+├── App.js
+├── App.css                    # Global styles & variables
+├── index.js
+├── pages/
+│   ├── Login.js
+│   ├── Sidebar.js
+│   ├── Dashboard.js
+│   ├── Classes.js
+│   ├── Attendance.js
+│   ├── Grades.js
+│   ├── Students.js
+│   └── Teachers.js
+├── styles/
+│   ├── Login.css              # Untuk Login.js
+│   ├── Sidebar.css            # Untuk Sidebar.js  
+│   ├── Dashboard.css          # Untuk Dashboard.js
+│   ├── Classes.css            # Untuk Classes.js
+│   ├── Attendance.css         # Untuk Attendance.js
+│   ├── Grades.css             # Untuk Grades.js
+│   ├── Students.css           # Untuk Students.js
+│   └── Teachers.css           # Untuk Teachers.js
+└── supabase/
+    └── supabaseClient.js

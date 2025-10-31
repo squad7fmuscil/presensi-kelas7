@@ -1,0 +1,176 @@
+# Spesifikasi Sistem Informasi Sekolah
+
+## 1. SISTEM ROLE & AKSES
+
+### **ADMIN (Full Access)**
+- **Dashboard**: Statistik lengkap seluruh sekolah
+- **Data**: Akses CRUD semua data guru dan siswa
+- **Presensi**: Monitor dan view presensi semua kelas
+- **Nilai**: Monitor dan view nilai semua kelas  
+- **Laporan**: Generate laporan seluruh data sekolah
+
+### **GURU (Limited Access)**
+- **Dashboard**: Statistik hanya kelas yang diampu
+- **Data**: View siswa di kelas yang diampu (read-only)
+- **Presensi**: Input presensi untuk kelas yang diampu
+- **Nilai**: Input nilai untuk mata pelajaran yang diampu
+- **Laporan**: Generate laporan kelas yang diampu saja
+
+---
+
+## 2. STRUKTUR DASHBOARD
+
+### **Dashboard Admin**
+```
+📊 STATISTIK SEKOLAH
+├── Total Siswa: 540 siswa
+├── Total Guru: 45 guru  
+├── Presensi Hari Ini: 87%
+└── Grafik Trend Kehadiran (Chart)
+```
+
+### **Dashboard Guru**
+```
+📊 STATISTIK KELAS AMPU
+├── Siswa di Kelas Ampu: 90 siswa
+├── Presensi Hari Ini: 92%
+└── Status Input Nilai Terbaru
+```
+
+---
+
+## 3. STRUKTUR DATA SISWA
+
+```
+TINGKAT KELAS
+├── Kelas 7
+│   ├── 7A (30 siswa)
+│   ├── 7B (30 siswa)
+│   ├── 7C (30 siswa)
+│   ├── 7D (30 siswa)
+│   ├── 7E (30 siswa)
+│   └── 7F (30 siswa)
+├── Kelas 8
+│   ├── 8A - 8F (30 siswa masing-masing)
+└── Kelas 9
+    └── 9A - 9F (30 siswa masing-masing)
+```
+
+---
+
+## 4. SISTEM PRESENSI
+
+### **Jenis Presensi:**
+1. **Presensi Harian** (per hari sekolah)
+2. **Presensi Per Mata Pelajaran** (per jam pelajaran)
+
+### **Status Presensi:**
+- ✅ Hadir
+- ❌ Tidak Hadir  
+- 📝 Izin
+- 🏥 Sakit
+- ⏰ Terlambat
+
+### **Input oleh:** Guru kelas atau guru mata pelajaran
+
+---
+
+## 5. SISTEM NILAI
+
+### **Jenis Penilaian:**
+1. **Nilai Harian** (Skala 1-5)
+   - Tugas harian
+   - Kuis
+   - Praktik
+   - Multiple entries per siswa
+
+2. **UTS (Ujian Tengah Semester)** 
+   - 1 nilai per mata pelajaran per semester
+
+3. **UAS (Ujian Akhir Semester)**
+   - 1 nilai per mata pelajaran per semester
+
+### **Perhitungan:**
+```
+Nilai Akhir = (Rata-rata Harian × 40%) + (UTS × 30%) + (UAS × 30%)
+```
+
+---
+
+## 6. SISTEM LAPORAN
+
+### **Jenis Laporan:**
+1. **Laporan Presensi**
+   - Bulanan
+   - Semester
+   - Per kelas atau keseluruhan
+
+2. **Laporan Nilai**
+   - Bulanan  
+   - Semester
+   - Per mata pelajaran
+
+3. **Laporan Data Siswa**
+   - Database siswa aktif
+   - Profil lengkap
+
+4. **Laporan Data Guru**
+   - Database guru aktif
+   - Pembagian mata pelajaran
+
+### **Format Export:**
+- 📄 **PDF** (untuk presentasi/cetak)
+- 📊 **Excel** (untuk analisis data)
+
+### **Periode Laporan:**
+- **Bulanan**: Data 1 bulan terakhir
+- **Semester**: Data per semester (Ganjil/Genap)
+
+---
+
+## 7. FITUR KHUSUS PER ROLE
+
+### **Admin dapat:**
+- ➕ Tambah/Edit/Hapus data guru dan siswa
+- 👁️ Monitor semua aktivitas presensi dan nilai
+- 📊 Generate laporan komprehensif semua data
+- ⚙️ Manage sistem dan setting aplikasi
+
+### **Guru dapat:**
+- 👁️ View data siswa di kelas yang diampu
+- ✅ Input presensi siswa (harian & per mapel)
+- 📝 Input nilai siswa (harian, UTS, UAS)
+- 📄 Generate laporan kelas yang diampu
+- 🔔 Notifikasi untuk siswa bermasalah
+
+---
+
+## 8. ALUR KERJA HARIAN
+
+### **Guru Login Pagi:**
+1. Cek dashboard → lihat statistik kelas ampu
+2. Input presensi harian per kelas
+3. Input presensi per mata pelajaran (sesuai jadwal)
+4. Input nilai jika ada tugas/ujian
+5. Generate laporan jika diperlukan
+
+### **Admin Monitoring:**
+1. Monitor dashboard keseluruhan sekolah  
+2. Cek laporan presensi harian
+3. Evaluasi data yang perlu ditindaklanjuti
+4. Generate laporan berkala (bulanan/semester)
+
+---
+
+## 9. DATABASE YANG DIBUTUHKAN
+
+- **Users** (admin, guru + role)
+- **Students** (data siswa + kelas)  
+- **Teachers** (data guru + mata pelajaran)
+- **Classes** (struktur kelas 7-9, A-F)
+- **Subjects** (mata pelajaran)
+- **Attendance** (presensi harian & per mapel)
+- **Grades** (nilai harian, UTS, UAS)
+- **Teacher_Classes** (relasi guru dengan kelas yang diampu)
+
+Apakah spesifikasi ini sudah sesuai dengan kebutuhan sistem yang Anda inginkan?

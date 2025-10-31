@@ -1,0 +1,13 @@
+id,username,name,active,created_at,updated_at,subject,role,homeroom_class,password
+4f1f50b9-0887-483d-911e-5507c9781ce1,yayatsubaryat,Yayat Subaryat,true,2025-08-23 15:21:31.387483+00,2025-08-23 15:28:22.026443+00,Bahasa Sunda,teacher,,guru123
+5eaaabd3-3e21-4341-83a3-f952286fbf8f,admin,Administrator,true,2025-08-24 05:10:14.886599+00,2025-08-24 05:10:14.886599+00,,admin,,admin123
+67107e33-e850-43c3-be7e-827aae0977b5,endahmirawanti,Endah Mirawanti,true,2025-08-23 15:21:31.387483+00,2025-08-24 05:10:28.890799+00,Seni Tari,homeroom_teacher,7C,guru123
+7924f19a-53b8-4116-975f-738fe70dc155,elanjaelani,Elan Jaelani,true,2025-08-23 15:21:31.387483+00,2025-08-24 05:10:28.890799+00,Bahasa Inggris,homeroom_teacher,7F,guru123
+7dca4511-4e82-4131-aaf6-42c9744f75b9,sandiindrawan,Sandi Indrawan,true,2025-08-23 15:21:31.387483+00,2025-08-23 15:28:22.026443+00,Informatika & Koding AI,teacher,,guru123
+92aa635e-c51e-4f5c-a178-5bb1218a6000,eulissumartini,Eulis Sumartini,true,2025-08-23 15:21:31.387483+00,2025-08-24 05:10:28.890799+00,Pendidikan Pancasila,homeroom_teacher,7D,guru123
+b623b4c5-1394-4204-9d97-de682dbaaa5e,iismasruroh,Iis Masruroh,true,2025-08-23 15:21:31.387483+00,2025-08-23 15:28:22.026443+00,Pendidikan Agama Islam,teacher,,guru123
+bb020c58-65e6-4831-ad83-78800a1a14d0,agussopandi,Agus Sopandi,true,2025-08-23 15:21:31.387483+00,2025-08-24 05:10:28.890799+00,PJOK,homeroom_teacher,7A,guru123
+ce67be5d-d488-45d7-9569-3c20679050d4,dewipuspitasari,Dewi Puspitasari,true,2025-08-23 15:21:31.387483+00,2025-08-24 05:10:28.890799+00,Matematika,homeroom_teacher,7B,guru123
+d35e9c6c-8dd6-4b05-86a2-755a5dd3130e,syalfahauratunisa,Syalfa Hauratunisa,true,2025-08-23 15:21:31.387483+00,2025-08-24 05:10:28.890799+00,IPA,homeroom_teacher,7E,guru123
+eb85f403-2b46-4b76-ac07-1270e4c03d42,didirachmandani,Didi Rachmandani,true,2025-08-23 15:21:31.387483+00,2025-08-23 15:28:22.026443+00,Bahasa Indonesia,teacher,,guru123
+edfd47d1-c1c6-4940-8a09-fc9a26edf368,elisitirohimah,Eli Siti Rohimah,true,2025-08-23 15:21:31.387483+00,2025-08-23 15:28:22.026443+00,IPS,teacher,,guru123
